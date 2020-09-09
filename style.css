@@ -1,0 +1,32 @@
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardId {
+    background: #cebf7b;
+    width: 3rem;
+    color: #333;
+    padding: 0.1rem;
+    font-weight: 700;
+    position: absolute;
+    border-radius: 0 0 10px 0;
+    top: 0;
+    left: 0;
+}
+
+.cardName {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cardImage {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.cardDetails {
+    font-size: 1.3rem;
+    color: #dbca80;
+}
