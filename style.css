@@ -1,5 +1,5 @@
-.card:hover {
-    transform: scale(1.05);
+.card {
+    cursor: pointer;
 }
 
 .cardId {
@@ -16,12 +16,12 @@
 
 .cardName {
     text-transform: capitalize;
-    font-size: 2rem;
+    font-size: 3vh;
     font-weight: 700;
 }
 
 .cardImage {
-    width: 150px;
+    width: auto;
     display: block;
     margin: auto;
 }
@@ -29,4 +29,94 @@
 .cardDetails {
     font-size: 1.3rem;
     color: #dbca80;
+}
+
+/*
+flip card
+*/
+.card-flip>div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: flex;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.badge-water {
+    background-color: #2389da;
+}
+
+.badge-poison {
+    background-color: #776587;
+}
+
+.badge-bug {
+    background-color: #df8830;
+}
+
+.badge-grass {
+    background-color: #49B960;
+}
+
+.badge-normal {
+    background-color: #e0f4fa;
+}
+
+.badge-flying {
+    background-color: #fbf8e7;
+}
+
+.badge-fire {
+    background-color: #e25822;
+}
+
+.badge-fairy {
+    background-color: #fbd0d2;
+}
+
+.badge-electric {
+    background-color: #ffff33;
+}
+
+.badge-ground {
+    background-color: #be4600;
+}
+.badge-fighting {
+    background-color: #b80607;
+}
+
+.badge-rock {
+    background-color: #969FB2;
+}
+
+.badge-ice {
+    background-color: #84abc4;
+}
+
+.badge-psychic {
+    background-color: #f189c1c4;
+}
+
+.badge-dragon {
+    background-color: #ff0008;
 }
