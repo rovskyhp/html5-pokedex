@@ -26,9 +26,31 @@
     margin: auto;
 }
 
+.cardImageDetails {
+    width: auto;
+    display: block;
+    margin: auto;
+    transition: transform 1s;
+}
+
+.cardImageDetails:hover {
+    transform: rotate(1080deg);
+  }
+
 .cardDetails {
     font-size: 1.3rem;
     color: #dbca80;
+}
+
+.detail-sprite {
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+}
+
+.monster-sprite {
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /*
