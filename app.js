@@ -8,7 +8,7 @@ const myHeaders = new Headers({
 const staticPokemons = [];
 
 function loadPokemons() {
-    for(let i = 1; i<3;i++){
+    for(let i = 1; i<151;i++){
         fetch(`https://pokeapi.co/api/v2/pokemon/${i}`, {
             mode: "cors",
             headers: myHeaders
@@ -117,7 +117,9 @@ function pokemonDetails(pokemonId) {
   $('#pokemonModal').modal('toggle');
 }
 
-
+// function pokemonSpecies(pokemonId){
+//     https://pokeapi.co/api/v2/pokemon-species/132/
+// }
 
 function ready(fn) {
     if (document.readyState != 'loading'){
